@@ -10,10 +10,10 @@ This feature implements the complete user onboarding flow for the friend-matchin
 ## Technical Context
 
 **Language/Version**: TypeScript 5.x (both mobile and backend)
-**Primary Dependencies**: React Native (Expo SDK 50+), NestJS v10+, Twilio Verify for SMS
+**Primary Dependencies**: React Native 0.81 (Expo SDK 54), React 19.1, NestJS 11.x, Twilio Verify for SMS
 **Storage**: PostgreSQL (RDS) for user data, S3 + CloudFront for images
 **Testing**: Jest (unit/integration), Detox (E2E mobile), Supertest (API)
-**Target Platform**: iOS 15+, Android 10+ (React Native), AWS (backend)
+**Target Platform**: iOS 15.1+, Android API 24+ (targeting API 36), AWS (backend)
 **Project Type**: Mobile + API (React Native Expo + NestJS)
 **Performance Goals**: SMS delivery < 60s (99%), API response < 200ms p95, onboarding < 5 min
 **Constraints**: Monthly burn < $500-800 (constitution), no per-message LLM calls

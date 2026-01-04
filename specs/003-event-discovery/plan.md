@@ -10,10 +10,10 @@ The Event Discovery feature enables onboarded users to browse, filter, and searc
 ## Technical Context
 
 **Language/Version**: TypeScript 5.x (React Native + Node.js)
-**Primary Dependencies**: React Native (Expo), NestJS, PostgreSQL with PostGIS
+**Primary Dependencies**: React Native 0.81 (Expo SDK 54), React 19.1, NestJS 11.x, PostgreSQL with PostGIS
 **Storage**: PostgreSQL (RDS) with geospatial extensions, Redis for caching
 **Testing**: Jest (API unit/integration), React Native Testing Library (mobile)
-**Target Platform**: iOS 15+, Android 10+ (React Native), Linux server (ECS Fargate)
+**Target Platform**: iOS 15.1+, Android API 24+ (targeting API 36), Linux server (ECS Fargate)
 **Project Type**: Mobile + API
 **Performance Goals**: Event feed loads in <2 seconds (SC-007), support 10k concurrent users MVP
 **Constraints**: <$500-800/mo infrastructure, no per-message LLM calls, offline-capable feed caching

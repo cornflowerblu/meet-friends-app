@@ -10,10 +10,10 @@ The Vibe Matching feature calculates and displays behavioral compatibility betwe
 ## Technical Context
 
 **Language/Version**: TypeScript 5.x (backend), TypeScript/React Native (mobile)
-**Primary Dependencies**: NestJS (backend API), Expo/React Native (mobile), PostgreSQL
+**Primary Dependencies**: NestJS 11.x (backend API), React Native 0.81 (Expo SDK 54), React 19.1, PostgreSQL
 **Storage**: PostgreSQL via RDS Aurora; Redis for compatibility score caching
 **Testing**: Jest (backend unit/integration), React Native Testing Library (mobile)
-**Target Platform**: iOS 15+, Android 11+, API server on ECS Fargate
+**Target Platform**: iOS 15.1+, Android API 24+ (targeting API 36), API server on ECS Fargate
 **Project Type**: Mobile + API
 **Performance Goals**: Compatibility calculation < 50ms per event; feed load < 2 seconds
 **Constraints**: No per-request LLM calls; match explanations via templates; scores never exposed

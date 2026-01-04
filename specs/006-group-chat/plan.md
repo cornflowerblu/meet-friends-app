@@ -9,11 +9,11 @@ The Group Chat feature enables event-based group messaging where RSVPed attendee
 
 ## Technical Context
 
-**Language/Version**: TypeScript 5.x (React Native/Expo for mobile), Node.js/TypeScript (NestJS for backend)
-**Primary Dependencies**: React Native (Expo), managed chat SDK (Stream Chat or SendBird), PostgreSQL, SNS
+**Language/Version**: TypeScript 5.x (React Native/Expo for mobile), Node.js 22 LTS/TypeScript (NestJS for backend)
+**Primary Dependencies**: React Native 0.81 (Expo SDK 54), React 19.1, NestJS 11.x, managed chat SDK (Stream Chat or SendBird), PostgreSQL, SNS
 **Storage**: PostgreSQL (RDS) for chat metadata, participant access, reports; chat provider for messages
 **Testing**: Jest for unit/integration, Detox for mobile E2E
-**Target Platform**: iOS 15+, Android 10+, API on ECS Fargate
+**Target Platform**: iOS 15.1+, Android API 24+ (targeting API 36), API on ECS Fargate
 **Project Type**: Mobile + API
 **Performance Goals**: Message delivery < 2 seconds (SC-001), real-time updates
 **Constraints**: Monthly burn < $500-800, no per-message LLM calls, persistent history (no deletion)

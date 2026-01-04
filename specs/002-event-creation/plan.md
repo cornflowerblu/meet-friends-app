@@ -10,10 +10,10 @@ Implement the Event Creation feature enabling onboarded users to create, edit, a
 ## Technical Context
 
 **Language/Version**: TypeScript 5.x (Mobile + Backend)
-**Primary Dependencies**: React Native (Expo SDK 50+), NestJS 10.x, TypeORM
+**Primary Dependencies**: React Native 0.81 (Expo SDK 54), React 19.1, NestJS 11.x, TypeORM
 **Storage**: PostgreSQL (RDS/Aurora) for events, vibe labels, templates, and series
 **Testing**: Jest (unit/integration), Detox for E2E mobile tests
-**Target Platform**: iOS 15+, Android API 26+, with backend on ECS Fargate
+**Target Platform**: iOS 15.1+, Android API 24+ (targeting API 36), with backend on ECS Fargate
 **Project Type**: Mobile + API (React Native app + REST backend)
 **Performance Goals**: Event creation completes in under 3 minutes (per SC-001), API responses under 200ms p95
 **Constraints**: Monthly burn under $500-800 (per constitution), no per-message LLM calls

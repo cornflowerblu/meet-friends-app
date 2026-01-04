@@ -11,11 +11,11 @@ Technical approach: Event-driven architecture with background workers for waitli
 
 ## Technical Context
 
-**Language/Version**: TypeScript/Node.js 20 LTS (backend), TypeScript/React Native Expo (mobile)
-**Primary Dependencies**: NestJS (backend), Expo SDK 50+ (mobile), PostgreSQL
+**Language/Version**: TypeScript/Node.js 22 LTS (backend), TypeScript/React Native Expo (mobile)
+**Primary Dependencies**: NestJS 11.x (backend), React Native 0.81 (Expo SDK 54), React 19.1, PostgreSQL
 **Storage**: PostgreSQL (RDS) for RSVP, waitlist, trust signals; Redis for real-time counts
 **Testing**: Jest (backend), Detox or React Native Testing Library (mobile)
-**Target Platform**: iOS 15+, Android 10+, API on ECS Fargate
+**Target Platform**: iOS 15.1+, Android API 24+ (targeting API 36), API on ECS Fargate
 **Project Type**: Mobile + API
 **Performance Goals**: RSVP action < 2 seconds (SC-001), real-time attendee count updates
 **Constraints**: 4-hour waitlist claim window, 24-hour post-event feedback window
